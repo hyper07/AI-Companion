@@ -15,7 +15,7 @@ An AI-powered application designed to provide companionship and virtual family i
 ## Data
 
 - **[Data folder](src/data/)** — Datasets and schemas for fine-tuning and evaluation
-- **[Synthetic family memory dataset](src/data/family-memory-dataset.jsonl)** — JSONL used to fine-tune the ChatGPT model (base: `gpt-4.1-mini-2025-04-14`, family profile, RFT-style messages). See [src/data/README.md](src/data/README.md) for format and usage.
+- **[Synthetic family memory dataset](src/data/family-memory-dataset.jsonl)** — JSONL used to **supervised fine-tune** the ChatGPT model (base: `gpt-4.1-mini-2025-04-14`, family profile, prompt-only chat messages). See [src/data/README.md](src/data/README.md) for format and usage.
 
 ## Features
 

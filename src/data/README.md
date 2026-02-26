@@ -27,13 +27,13 @@ This folder contains a custom dataset (`family-memory-dataset.jsonl`) designed t
 
 ## Dataset Format
 
-The file follows the **Reinforcement Fine-Tuning (RFT)** format (also compatible with OpenAI Chat Fine-Tuning inputs where the model generates the completion). Each line is a standalone JSON object representing a conversation snippet ending with a user message:
+The file follows a **supervised chat fine-tuning** format compatible with OpenAI's supervised fine-tuning API. Each line is a standalone JSON object representing a conversation snippet ending with a user message (a prompt-only example):
 
 ```json
 {"messages": [{"role": "system", "content": "..."}, {"role": "user", "content": "..."}]}
 ```
 
-The assistant's response is **NOT** included in the dataset, allowing the model to generate its own responses during the Reinforcement Fine-Tuning process based on the system instructions and user input.
+The assistant's response is **not** stored in the JSONL file; instead, the supervised fine-tuning job learns to generate appropriate assistant replies from these prompts and the system instructions.
 
 ## How to Use with OpenAI API
 
