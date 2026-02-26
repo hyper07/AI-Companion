@@ -1,9 +1,8 @@
 # AI Companion for Dementia Patients
-- **[Main image](assets/Memory%20Companion.png)** — 
 ![Main image](assets/Memory%20Companion.png)
 
 
-An AI-powered application designed to provide companionship and virtual family interactions for dementia patients. This project uses Convex as a real-time backend and React for the frontend.
+An AI-powered application designed to provide companionship and virtual family interactions for dementia patients. Conversation is powered by a **fine-tuned ChatGPT model** and **ElevenLabs conversation AI** for natural voice and dialogue. The project uses Convex as a real-time backend and React for the frontend.
 
 ## Links
 
@@ -12,6 +11,11 @@ An AI-powered application designed to provide companionship and virtual family i
 
 ## Assets
 - **[Presentation](assets/Memory%20Companion.pptx)** — Slide deck
+
+## Data
+
+- **[Data folder](src/data/)** — Datasets and schemas for fine-tuning and evaluation
+- **[Synthetic family memory dataset](src/data/family-memory-dataset.jsonl)** — JSONL used to fine-tune the ChatGPT model (family profile, RFT-style messages). See [src/data/README.md](src/data/README.md) for format and usage.
 
 ## Features
 
