@@ -1,6 +1,6 @@
 # Family Memory Dataset for ChatGPT Fine-Tuning
 
-This folder contains a custom dataset (`family-memory-dataset.jsonl`) designed to fine-tune an OpenAI model (like gpt-3.5-turbo or gpt-4o-mini) to act as a compassionate AI companion for an elderly patient with dementia.
+This folder contains a custom dataset (`family-memory-dataset.jsonl`) designed to fine-tune an OpenAI model (base: `gpt-4.1-mini-2025-04-14`) to act as a compassionate AI companion for an elderly patient with dementia.
 
 ## Family Profile Summary
 
@@ -55,12 +55,12 @@ curl https://api.openai.com/v1/fine_tuning/jobs \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
     "training_file": "file-YOUR_FILE_ID",
-    "model": "gpt-3.5-turbo"
+    "model": "gpt-4.1-mini-2025-04-14"
   }'
 ```
 
 ### 3. Use the Fine-Tuned Model
-After training is complete, you can use your new `ft:gpt-3.5-turbo...` model ID in your chat completion requests. It will be specialized to respond as Margaret's companion with knowledge of her family history.
+After training is complete, you can use your new `ft:gpt-4.1-mini-2025-04-14...` model ID in your chat completion requests. It will be specialized to respond as Margaret's companion with knowledge of her family history.
 
 ---
 *Note: This dataset is for demonstration and testing purposes for the Memory Companion app.*

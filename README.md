@@ -2,7 +2,7 @@
 ![Main image](assets/Memory%20Companion.png)
 
 
-An AI-powered application designed to provide companionship and virtual family interactions for dementia patients. Conversation is powered by a **fine-tuned ChatGPT model** and **ElevenLabs conversation AI** for natural voice and dialogue. The project uses Convex as a real-time backend and React for the frontend.
+An AI-powered application designed to provide companionship and virtual family interactions for dementia patients. The production app is built end-to-end on **VibeFlow** (full-stack workflows, UI, and hosting), with conversation powered by a **fine-tuned GPT-4.1 mini model** and **ElevenLabs conversation AI** for natural voice and dialogue.
 
 ## Links
 
@@ -15,9 +15,12 @@ An AI-powered application designed to provide companionship and virtual family i
 ## Data
 
 - **[Data folder](src/data/)** — Datasets and schemas for fine-tuning and evaluation
-- **[Synthetic family memory dataset](src/data/family-memory-dataset.jsonl)** — JSONL used to fine-tune the ChatGPT model (family profile, RFT-style messages). See [src/data/README.md](src/data/README.md) for format and usage.
+- **[Synthetic family memory dataset](src/data/family-memory-dataset.jsonl)** — JSONL used to fine-tune the ChatGPT model (base: `gpt-4.1-mini-2025-04-14`, family profile, RFT-style messages). See [src/data/README.md](src/data/README.md) for format and usage.
 
 ## Features
+
+- **[Caregiver dashboard](assets/dashboard.png)** — Overview for caregivers to monitor patients, alerts, and activity  
+  ![Dashboard](assets/dashboard.png)
 
 - **[Real-time location](assets/realtime_location_map.png)** — Map view with refresh and address display  
   ![Location](assets/realtime_location_map.png)
@@ -34,17 +37,17 @@ An AI-powered application designed to provide companionship and virtual family i
 - **[AI voice agent](assets/elevenlan_agent.png)** — ElevenLabs agent config (personality, first message, voice)  
   ![ElevenLabs](assets/elevenlan_agent.png)
 
-- **[Fine-tuned model](assets/chatgpt_fine_tune.png)** — OpenAI fine-tuning (e.g. GPT-4.1 mini) for conversation  
+- **[Fine-tuned model](assets/chatgpt_fine_tune.png)** — OpenAI fine-tuning (base model: `gpt-4.1-mini-2025-04-14`) for conversation  
   ![Fine-tune](assets/chatgpt_fine_tune.png)
 
 
 
 ## Tech Stack
 
-- **Frontend:** React, Vite, TypeScript, Tailwind CSS
-- **Backend:** Convex (Cloud-hosted Backend-as-a-Service)
-- **AI/ML:** OpenAI (Conversation), ElevenLabs (Text-to-Speech & Speech-to-Text)
-- **Deployment:** Docker (Frontend), Convex Cloud (Backend)
+- **Full-stack platform:** VibeFlow (frontend UI, backend logic, workflows, hosting)
+- **LLM:** OpenAI `gpt-4.1-mini-2025-04-14` (fine-tuned with the family memory dataset)
+- **Conversation AI:** ElevenLabs (voice, ElevenAgents, real-time conversation)
+- **Data & evaluation:** Custom synthetic family-memory dataset and grader schema in `src/data`
 
 ## Prerequisites
 
