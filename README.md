@@ -1,6 +1,35 @@
 # AI Companion for Dementia Patients
+- **[Main image](assets/Memory%20Companion.png)** — Project branding / hero visual
 
 An AI-powered application designed to provide companionship and virtual family interactions for dementia patients. This project uses Convex as a real-time backend and React for the frontend.
+
+## Links
+
+- **[App workspace](https://app.vibeflow.ai/shared/oO7Vb42k1A30CkRZ)** — VibeFlow app workspace
+- **[Production](https://dementiapatients-623vkd.vibeflow.build)** — Live production deployment
+
+## Assets
+- **[Presentation](assets/Memory%20Companion.pptx)** — Slide deck
+
+## Features
+
+- **[Real-time location](assets/realtime_location_map.png)** — Map view with refresh and address display  
+  ![Location](assets/realtime_location_map.png)
+
+- **[Mini games](assets/mini_game.png)** — Color Quiz, Memory, Sequence, Rhyme Time, Emoji Match, True or False  
+  ![Fun](assets/mini_game.png)
+
+- **[Family call](assets/family_call.png)** — Contact list to call family members (e.g. Son, Daughter)  
+  ![Call](assets/family_call.png)
+
+- **[AI voice agent](assets/elevenlan_agent.png)** — ElevenLabs agent config (personality, first message, voice)  
+  ![ElevenLabs](assets/elevenlan_agent.png)
+
+- **[Fine-tuned model](assets/chatgpt_fine_tune.png)** — OpenAI fine-tuning (e.g. GPT-4.1 mini) for conversation  
+  ![Fine-tune](assets/chatgpt_fine_tune.png)
+
+- **[Active call](assets/AI_daughter.png)** — In-call UI with transcript and mute/end controls  
+  ![Call UI](assets/AI_daughter.png)
 
 ## Tech Stack
 
