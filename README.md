@@ -1,5 +1,7 @@
 # AI Companion for Dementia Patients
-- **[Main image](assets/Memory%20Companion.png)** — Project branding / hero visual
+- **[Main image](assets/Memory%20Companion.png)** — 
+![Main image](assets/Memory%20Companion.png)
+
 
 An AI-powered application designed to provide companionship and virtual family interactions for dementia patients. This project uses Convex as a real-time backend and React for the frontend.
 
@@ -22,14 +24,16 @@ An AI-powered application designed to provide companionship and virtual family i
 - **[Family call](assets/family_call.png)** — Contact list to call family members (e.g. Son, Daughter)  
   ![Call](assets/family_call.png)
 
+- **[Active call](assets/AI_daughter.png)** — In-call UI with transcript and mute/end controls  
+  ![Call UI](assets/AI_daughter.png)
+
 - **[AI voice agent](assets/elevenlan_agent.png)** — ElevenLabs agent config (personality, first message, voice)  
   ![ElevenLabs](assets/elevenlan_agent.png)
 
 - **[Fine-tuned model](assets/chatgpt_fine_tune.png)** — OpenAI fine-tuning (e.g. GPT-4.1 mini) for conversation  
   ![Fine-tune](assets/chatgpt_fine_tune.png)
 
-- **[Active call](assets/AI_daughter.png)** — In-call UI with transcript and mute/end controls  
-  ![Call UI](assets/AI_daughter.png)
+
 
 ## Tech Stack
 
